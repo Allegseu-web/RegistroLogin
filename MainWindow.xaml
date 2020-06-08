@@ -29,7 +29,7 @@
                 <ImageBrush ImageSource="/Diseño sin título (3).png"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="aidixd" HorizontalAlignment="Left" Margin="25,85,0,0" Text="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25"/>
+        <TextBox x:Name="aidixd" HorizontalAlignment="Left" Margin="25,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25"/>
         <Label Content="Cuenta Id:" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Height="25" Width="100"/>
         <Button Content="" HorizontalAlignment="Left" Margin="30,320,0,0" VerticalAlignment="Top" Height="40" Width="95">
             <Button.Background>
