@@ -14,24 +14,24 @@
         <Label Content="Nombre de Usuario:" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="335" Height="24"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="30,224,0,0" VerticalAlignment="Top" Width="335" Height="26"/>
         <TextBox x:Name="pass" HorizontalAlignment="Left" Margin="30,260,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Height="26"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="150,320,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Button_Click">
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="150,320,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Guardar_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="270,320,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Button_Click_1">
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="270,320,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Borrar_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título (1).png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="150,70,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Button_Click_2">
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="150,70,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Buscar_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título (3).png"/>
             </Button.Background>
         </Button>
         <TextBox x:Name="aidixd" HorizontalAlignment="Left" Margin="25,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25"/>
         <Label Content="Cuenta Id:" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Height="25" Width="100"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="30,320,0,0" VerticalAlignment="Top" Height="40" Width="95">
+        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="30,320,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Nuevo_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título (2).png"/>
             </Button.Background>

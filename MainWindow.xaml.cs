@@ -1,19 +1,7 @@
 ﻿using LoginRegistro.BLL;
 using LoginRegistro.Entidades;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace LoginRegistro
 {
@@ -22,7 +10,7 @@ namespace LoginRegistro
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Cuenta CuentaActual = new Cuenta();
+        private Usuarios CuentaActual = new Usuarios();
 
         public MainWindow()
         {
@@ -31,25 +19,27 @@ namespace LoginRegistro
 
         private void Borrar()
         {
-            this.CuentaActual = new Cuenta();
+            this.CuentaActual = new Usuarios();
             this.DataContext = CuentaActual;
+            Correo.Text = "";
+            pass.Text = "";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Guardar_Boton(object sender, RoutedEventArgs e)
         {
-            Cuenta nueva = new Cuenta();
+            Usuarios nueva = new Usuarios();
             nueva.Correo = Correo.Text;
             nueva.Contraseña = pass.Text;
             CuentasBLL.Guardar(nueva);
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Borrar_Boton(object sender, RoutedEventArgs e)
         {
             int aidi = Int32.Parse(aidixd.Text);
             CuentasBLL.Borrar(aidi);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Buscar_Boton(object sender, RoutedEventArgs e)
         {
             int aidi = Int32.Parse(aidixd.Text);
             this.CuentaActual = CuentasBLL.Buscar(aidi);
@@ -63,6 +53,11 @@ namespace LoginRegistro
             {
                 MessageBox.Show("No se encontro informacion.");
             }
+        }
+
+        private void Nuevo_Boton(object sender, RoutedEventArgs e)
+        {
+            Borrar();
         }
     }
 }

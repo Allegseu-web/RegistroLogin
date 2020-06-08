@@ -13,13 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Administrador %281%29.png" />
     <None Remove="Administrador.png" />
     <None Remove="Diseño sin título %281%29.png" />
     <None Remove="Diseño sin título %282%29.png" />
     <None Remove="Diseño sin título %283%29.png" />
     <None Remove="Diseño sin título.png" />
-    <None Remove="fisica2.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,13 +33,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Administrador (1).png" />
     <Resource Include="Administrador.png" />
     <Resource Include="Diseño sin título (1).png" />
     <Resource Include="Diseño sin título (2).png" />
     <Resource Include="Diseño sin título (3).png" />
     <Resource Include="Diseño sin título.png" />
-    <Resource Include="fisica2.png" />
   </ItemGroup>
 
   <ItemGroup>

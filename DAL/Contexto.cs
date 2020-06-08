@@ -8,7 +8,7 @@ namespace LoginRegistro.DAL
 {
     class Contexto : DbContext
     {
-        public DbSet <Cuenta> Cuentas { get; set; }
+        public DbSet <Usuarios> Cuentas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"Data Source= DATA\Correos.db");

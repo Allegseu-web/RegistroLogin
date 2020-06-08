@@ -13,7 +13,7 @@ namespace LoginRegistro.BLL
 {
     public class CuentasBLL
     {
-        public static bool Guardar(Cuenta cuenta)
+        public static bool Guardar(Usuarios cuenta)
         {
             if (!Existe(cuenta.CuentaId))
             {
@@ -25,7 +25,7 @@ namespace LoginRegistro.BLL
             }
             
         }
-        private static bool Insertar(Cuenta cuenta)
+        private static bool Insertar(Usuarios cuenta)
         {
             bool paso = false;
             Contexto c = new Contexto();
@@ -44,7 +44,7 @@ namespace LoginRegistro.BLL
             }
             return paso;
         }
-        public static bool Modificar(Cuenta cuenta)
+        public static bool Modificar(Usuarios cuenta)
         {
             bool paso = false;
             Contexto c = new Contexto();
@@ -90,10 +90,10 @@ namespace LoginRegistro.BLL
             }
             return paso;
         }
-        public static Cuenta Buscar(int id)
+        public static Usuarios Buscar(int id)
         {
             Contexto c = new Contexto();
-            Cuenta cuenta = new Cuenta();
+            Usuarios cuenta = new Usuarios();
             try
             {
                 cuenta = c.Cuentas.Find(id);
