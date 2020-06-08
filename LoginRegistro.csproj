@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200607223216_Inicial.cs" />
+    <Compile Remove="Migrations\20200607223216_Inicial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Administrador %281%29.png" />
+    <None Remove="Administrador.png" />
+    <None Remove="Diseño sin título %281%29.png" />
+    <None Remove="Diseño sin título %282%29.png" />
+    <None Remove="Diseño sin título %283%29.png" />
+    <None Remove="Diseño sin título.png" />
+    <None Remove="fisica2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqLite" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DATA\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Administrador (1).png" />
+    <Resource Include="Administrador.png" />
+    <Resource Include="Diseño sin título (1).png" />
+    <Resource Include="Diseño sin título (2).png" />
+    <Resource Include="Diseño sin título (3).png" />
+    <Resource Include="Diseño sin título.png" />
+    <Resource Include="fisica2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DATA\Correos.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

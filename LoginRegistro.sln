@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginRegistro", "LoginRegistro.csproj", "{61730FEF-AF73-449C-BAA2-0F605FA9E96E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginRegistroTests", "..\LoginRegistroTests\LoginRegistroTests.csproj", "{DA8BDF6B-5829-48AC-998B-E1F1EBA82728}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61730FEF-AF73-449C-BAA2-0F605FA9E96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61730FEF-AF73-449C-BAA2-0F605FA9E96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61730FEF-AF73-449C-BAA2-0F605FA9E96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61730FEF-AF73-449C-BAA2-0F605FA9E96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8BDF6B-5829-48AC-998B-E1F1EBA82728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8BDF6B-5829-48AC-998B-E1F1EBA82728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8BDF6B-5829-48AC-998B-E1F1EBA82728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8BDF6B-5829-48AC-998B-E1F1EBA82728}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0B0690E-8739-47C7-8726-62E849FC7FF7}
+	EndGlobalSection
+EndGlobal
