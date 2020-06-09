@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LoginRegistro.Entidades
 {
-    public class Cuenta
+    public class Usuarios
     {
         [Key]
         public int CuentaId { get; set; }

@@ -5,21 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginRegistro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="425" Width="400">
+        Title="MainWindow" Height="600" Width="400">
     <Grid>
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <TextBox x:Name="Correo" HorizontalAlignment="Left" Margin="30,186,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Height="25"/>
+        <TextBox x:Name="Caja_Usuario" HorizontalAlignment="Left" Margin="30,186,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Height="25"/>
         <Label Content="Nombre de Usuario:" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="335" Height="24"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="30,224,0,0" VerticalAlignment="Top" Width="335" Height="26"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Margin="30,260,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Height="26"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="150,320,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Guardar_Boton">
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="150,452,0,0" VerticalAlignment="Top" Width="95" Height="40" Click="Guardar_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="270,320,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Borrar_Boton">
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="270,452,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Borrar_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título (1).png"/>
             </Button.Background>
@@ -31,11 +30,14 @@
         </Button>
         <TextBox x:Name="aidixd" HorizontalAlignment="Left" Margin="25,85,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="25"/>
         <Label Content="Cuenta Id:" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Height="25" Width="100"/>
-        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="30,320,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Nuevo_Boton">
+        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="30,452,0,0" VerticalAlignment="Top" Height="40" Width="95" Click="Nuevo_Boton">
             <Button.Background>
                 <ImageBrush ImageSource="/Diseño sin título (2).png"/>
             </Button.Background>
         </Button>
+        <PasswordBox x:Name="Caja_Contraseña" HorizontalAlignment="Left" Margin="30,270,0,0" VerticalAlignment="Top" Width="335" Height="25"/>
+        <Label Content="Confirmar Contraseña" HorizontalAlignment="Left" Margin="30,320,0,0" VerticalAlignment="Top" Width="335" Height="25"/>
+        <PasswordBox x:Name="Caja_Confirmar" HorizontalAlignment="Left" Margin="30,370,0,0" VerticalAlignment="Top" Width="335" Height="25"/>
 
     </Grid>
 </Window>

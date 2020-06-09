@@ -21,17 +21,18 @@ namespace LoginRegistro
         {
             this.CuentaActual = new Usuarios();
             this.DataContext = CuentaActual;
-            Correo.Text = "";
-            pass.Text = "";
+            Caja_Usuario.Text = "";
+            Caja_Contraseña.Password = "";
+            Caja_Confirmar.Password = "";
         }
 
         private void Guardar_Boton(object sender, RoutedEventArgs e)
         {
-            if (Validar() == true)
+            if (Validar() == true && Confirmar() == true)
             {
                 Usuarios nueva = new Usuarios();
-                nueva.Correo = Correo.Text;
-                nueva.Contraseña = pass.Text;
+                nueva.NombreUsuario = Caja_Usuario.Text;
+                nueva.Contraseña = Caja_Contraseña.Password;
                 CuentasBLL.Guardar(nueva);
             }
             else
@@ -53,8 +54,8 @@ namespace LoginRegistro
             this.CuentaActual = CuentasBLL.Buscar(aidi);
             if(CuentaActual != null)
             {
-                Correo.Text = CuentaActual.Correo;
-                pass.Text = CuentaActual.Contraseña;
+                Caja_Usuario.Text = CuentaActual.NombreUsuario;
+                Caja_Contraseña.Password = CuentaActual.Contraseña;
                 CuentaActual = null;
             }
             else
@@ -71,12 +72,20 @@ namespace LoginRegistro
         private bool Validar()
         {
             bool esValido = true;
-            if(Correo.Text.Length == 0 && pass.Text.Length == 0)
+            if(Caja_Usuario.Text.Length == 0 && Caja_Contraseña.Password.Length == 0)
             {
                 esValido = false;
                 MessageBox.Show("Los campos estan vacio.");
             }
             return esValido;
+        }
+        private bool Confirmar()
+        {
+            bool confirm = false;
+            if (Caja_Contraseña.Equals(Caja_Confirmar)){
+                return confirm = true;
+            }
+            return confirm;
         }
     }
 }
