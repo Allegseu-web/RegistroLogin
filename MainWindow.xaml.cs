@@ -27,10 +27,18 @@ namespace LoginRegistro
 
         private void Guardar_Boton(object sender, RoutedEventArgs e)
         {
-            Usuarios nueva = new Usuarios();
-            nueva.Correo = Correo.Text;
-            nueva.Contraseña = pass.Text;
-            CuentasBLL.Guardar(nueva);
+            if (Validar() == true)
+            {
+                Usuarios nueva = new Usuarios();
+                nueva.Correo = Correo.Text;
+                nueva.Contraseña = pass.Text;
+                CuentasBLL.Guardar(nueva);
+            }
+            else
+            {
+                //nada
+            }
+            
         }
 
         private void Borrar_Boton(object sender, RoutedEventArgs e)
@@ -58,6 +66,17 @@ namespace LoginRegistro
         private void Nuevo_Boton(object sender, RoutedEventArgs e)
         {
             Borrar();
+        }
+
+        private bool Validar()
+        {
+            bool esValido = true;
+            if(Correo.Text.Length == 0 && pass.Text.Length == 0)
+            {
+                esValido = false;
+                MessageBox.Show("Los campos estan vacio.");
+            }
+            return esValido;
         }
     }
 }
